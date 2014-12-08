@@ -5,7 +5,7 @@ xplayer.js supports HTML5 video, Youtube, and Vimeo. It is a jQuery plugin.
 
 Dependencies: Bootstrap3.0+, jQuery, jQuery UI, popcorn.js
 
-Here is how to use the xplayer.js.
+Here is how to use the xplayer.js. A demo can be found here: http://jyxia.github.io/xplayer/
 
 Step 1: Files to include
 ```HTML
