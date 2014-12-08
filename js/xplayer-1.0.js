@@ -144,7 +144,8 @@
     $.fn.xPlayer = function(options) {
          // Establish our default settings
         var videoInfo = $.extend({
-            url : null
+            url : null,
+            removeXPlayer : false
         }, options);
 
         return this.each(function() {
@@ -167,6 +168,13 @@
 
             var xplayer;  // globe variable for the plugin to access
             var element = $(this);
+
+            if (videoInfo.removeXPlayer) {
+                if ($playerContainer.length > 0) {
+                    console.log($playerContainer.length);
+                    $playerContainer.empty();
+                }
+            }
 
             var createVideoContainer = function() {
                 $playerContainer.css({
